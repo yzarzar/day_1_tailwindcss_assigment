@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  font-family: "Playfair Display", serif; /* Example for heading */
+  color: #333333; /* Dark gray */
+}
+
+dd {
+    font-family: 'Open Sans', sans-serif; color: #555555
+}
+
+.underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.underline::before,
+.underline::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: blue;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  position: relative;
+  margin: 10px;
+}
